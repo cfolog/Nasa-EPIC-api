@@ -49,6 +49,7 @@ body{
 .data-image{
     max-height: 50%;
     max-width: 80%;
+    border-radius: 8px;
 }
 
 .buttons{
