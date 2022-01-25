@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>EPIC API</title>
+</head>
+<body onload="doTheThing()">
+    <div class="container">
+
+        <div class="image-slider">
+            
+            <h1>Nasa's EPIC (Earth Polychromatic Imaging Camera) API</h1>
+
+            <div class="data-wrapper">
+                
+                <div class="data-title"></div>
+                <img class="data-image" src="#" alt="nasa-image">
+                <div class="caption"></div>
+                <div class="date"></div>
+                <div class="cords">
+                    Centroid Coordinates:
+                    <div class="lat"></div>
+                    <div class="lon"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <p class="prev-image"><</p>
+                <p class="next-image">></p>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <script src="./js/fetch.js"></script>
+    <script src="./js/update.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
