@@ -25,7 +25,7 @@ class Update {
         // updates all UI info
         imageTitle.textContent = `Image ${currentImg + 1}/6`;
         imageSlot.src =`https://epic.gsfc.nasa.gov/archive/natural/2022/01/24/png/${newData.image}.png`;
-        captionSlot.textContent = `Date Taken: ${newData.caption}`;
+        captionSlot.textContent = `Caption: ${newData.caption}`;
         dateSlot.textContent = `Date Taken: ${newData.date}`;
         latSlot.textContent = `Lat: ${newData.centroid_coordinates.lat}`;
         lonSlot.textContent = `Lon: ${newData.centroid_coordinates.lon}`;
