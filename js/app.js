@@ -18,20 +18,19 @@ class Update {
         const dateSlot = document.querySelector('.date');
         const latSlot = document.querySelector('.lat');
         const lonSlot = document.querySelector('.lon');
-        
+
         // limits the returning data to one image out of the 6. starts on 0 on load
         const newData = await data[currentImg];
-
+        const dateTaken = await newData.date.split(' ')[0].split('-').join('/');  // changes date from XXXXX-XX-XX to XXXX/XX/XX for the URL to use
         // updates all UI info
         imageTitle.textContent = `Image ${currentImg + 1}/6`;
-        imageSlot.src =`https://epic.gsfc.nasa.gov/archive/natural/2022/01/24/png/${newData.image}.png`;
+        imageSlot.src =`https://epic.gsfc.nasa.gov/archive/natural/${dateTaken}/jpg/${newData.image}.jpg`;
         captionSlot.textContent = `Caption: ${newData.caption}`;
         dateSlot.textContent = `Date Taken: ${newData.date}`;
         latSlot.textContent = `Lat: ${newData.centroid_coordinates.lat}`;
         lonSlot.textContent = `Lon: ${newData.centroid_coordinates.lon}`;
 
         // check returning info
-        // console.log(newData)
     }
 }
 
